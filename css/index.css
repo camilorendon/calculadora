@@ -39,14 +39,14 @@ html{
     width: 100%;
 }
 
-.key-numbers{
+.keypad-numbers{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 
 }
 
-.key-button{
+.keypad-button{
     width: 25%;
     padding: 15px 0;
     text-align: center;
