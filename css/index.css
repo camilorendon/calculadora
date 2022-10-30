@@ -7,10 +7,28 @@
 }
 
 html{
+    background: #100a1c;
+    background-image:
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    color: #6cacc5;
     font-family: 'Georama', sans-serif;
     font-size: 63.5%;
 }
-
+body{
+    color: #6cacc5;
+    font: 300 18px/1.6 "Source Sans Pro",sans-serif;
+    margin: 0;
+    padding: 5em 0 2em;
+    text-align: center;
+}
+.title {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+  }
 .container{
     display: flex;
     justify-content: center;
@@ -24,7 +42,8 @@ html{
     flex-direction: column;
     width: 500px;
     font-size: 2rem;
-    border: 1px solid gray;
+    border:1px solid gray;
+    border-radius: 10px;
 }
 
 .calculator-display{
@@ -32,6 +51,7 @@ html{
     width: 100%;
     text-align: right;
     border: 1px solid gray;
+    border-radius: 10px;
     overflow-x: auto;
 
 
@@ -52,22 +72,18 @@ html{
     padding: 15px 0;
     text-align: center;
     cursor: pointer;
-    background-color: white;
+    background: rgba(42,50,113, .28);
+    color: #6cacc5;
     border: 1px solid gray;
+    border-radius: 10px;
 }
 .keypad-button:hover{
     filter: brightness(80%);
     transition: filter .25s;
 }
 
-.keypad-button.yellow{
-    background-color: yellow;
-}
+
 
 .keypad-button.large{
     width: 50%;
-}
-
-.keypad-button.dark{
-    background-color: lightgray;
 }
